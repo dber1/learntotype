@@ -208,7 +208,7 @@
         },
         methods: {
             async keydown(e) {
-                let k = hebrewKeyboard[e.keyCode];
+                let k = e.key;//hebrewKeyboard[e.keyCode];
 
                 if (!this.readKey) {
                     return;
